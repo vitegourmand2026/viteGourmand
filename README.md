@@ -8,7 +8,7 @@ Le site est accessible ici : [Lien à ajouter après déploiement]
 
 ## Code source
 
-Dépôt GitHub : [Lien à ajouter]
+Dépôt GitHub : (https://github.com/vitegourmand2026/viteGourmand)
 
 
 ### Étapes d'installation en local
