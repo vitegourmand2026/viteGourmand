@@ -1,0 +1,5 @@
+code/php/config.php
+code/process/config_brevo.php
+.env
+.DS_Store
+*.log
