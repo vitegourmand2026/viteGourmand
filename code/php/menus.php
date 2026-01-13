@@ -1,3 +1,4 @@
+// Feature: Gestion des menus avec filtres et catégories
 <?php
 
 include 'config.php';
