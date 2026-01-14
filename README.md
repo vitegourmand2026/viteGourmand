@@ -4,7 +4,7 @@ Site de commande de menus en livraison pour le restaurant VITE ET GOURMAND, dév
 
 ## Démo en ligne
 
-Le site est accessible ici : [Lien à ajouter après déploiement]
+Le site est accessible ici : http://vitegourmand.rf.gd
 
 ## Code source
 
