@@ -1,4 +1,4 @@
-//  Interface administrateur
+
 <?php 
 session_start();
 require_once '../../process/check_auth.php';  

@@ -1,4 +1,4 @@
-// Feature: Système de gestion des commandes clients
+
 <?php
 session_start();
 require_once 'config.php';

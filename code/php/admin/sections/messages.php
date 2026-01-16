@@ -28,7 +28,7 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des avis</title>
-    <link rel="stylesheet" href="/code/css/gestionAvis.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="/code/css/messages.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -41,13 +41,13 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="tableContainer">
     <table>
-        <caption>Tableau des messages</caption>
+        <caption class="caption">Tableau des messages</caption>
         <tbody>
             <?php foreach ($messages as $m): ?>
-            <tr>
-                <th><?= htmlspecialchars($m['prenom'] . ' ' . $m['nom']) ?></th>
-                <td><?= nl2br(htmlspecialchars($m['email'])) ?></td>
-                <td><?= nl2br(htmlspecialchars($m['message'])) ?></td>
+            <tr class="tableContent">
+                <th class="tableContentItem"><?= htmlspecialchars($m['prenom'] . ' ' . $m['nom']) ?></th>
+                <td class="tableContentItem"><?= nl2br(htmlspecialchars($m['email'])) ?></td>
+                <td class="tableContentItem"><?= nl2br(htmlspecialchars($m['message'])) ?></td>
                 
                 <td>
                     <form action="../../../process/supprimer_messages.php" method="POST" onsubmit="return confirm('Voulez-vous vraiment supprimer ce message ?');">

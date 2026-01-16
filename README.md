@@ -36,14 +36,14 @@ cd viteGourmand
 
 #### 2. Déplacer le projet dans un serveur local type MAMP
 
-**Important :** Ce projet doit être placé dans le dossier `htdocs/` de MAMP.
+**Important :** Ce projet doit être placé dans le dossier racine `htdocs/` de MAMP.
 
 
 #### 3. Créer la base de données
 
 1. Nom : `viteGourmand`
 2. Interclassement : `utf8mb4_unicode_ci`
-
+ 
 
 #### 4. Importer les données
 
@@ -52,19 +52,18 @@ Sélectionner `database/viteGourmand.sql`
 
 #### 5. Configurer la connexion à la base de données
 
-1. Dans le dossier PHP renommer `config-exemple.php` en `config.php`
+1. Le projet utilise 3 fichiers de configuration séparés pour gérer local et production :
 
-2. Modifier `config.php` avec vos identifiants 
+2. Modifier `config_local.php` ou `config_production.php` avec vos identifiants.
 
-```php
-$host = 'localhost';
-$dbname = 'viteGourmand';
-$username = 'root';
-$password = 'root'; 
-```
+3. Créer les fichiers de configuration depuis les exemples et selon vos besoins d'environnement local ou     production 
+
+4. Le fichier config.php détecte automatiquement l'environnement
+
+
 #### 5.1 . Configurer api mail brevo
 
-1. Dans le dossier process renommer le fichier `config_brevoExemple.php` en `config_brevo.php` et inserer la clé API founie dans le pdf LIENS
+1. Dans le dossier process renommer le fichier `config_brevoExemple.php` en `config_brevo.php` et inserer la clé API founie dans la partie "LIENS" du pdf 
 
 #### 6. Accéder au site
 
@@ -97,4 +96,4 @@ Importer le fichier `database/viteGourmand.sql`
 THOMAS BRUSTON
 
 
-## Ne jamais commiter ce fichier sur Git !!!
+## Ne jamais commit ce fichier sur Git !!!

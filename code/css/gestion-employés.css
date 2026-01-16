@@ -41,8 +41,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2rem 0;
+            padding: 1rem 0;
             border-bottom: 1px solid #e0e0e0;
+            font-size: 12px;
         }
 
         .employee-item:last-child {
@@ -51,7 +52,8 @@
 
         .employee-name {
             font-size: 16px;
-            color: #000000;
+            color:#49cb52;
+            font-weight: bold;
         }
 
         .btn-delete {
@@ -64,6 +66,7 @@
             align-items: center;
             justify-content: center;
             transition: 0.3s ease;
+            
     }
 
         .btn-delete i {
@@ -101,3 +104,12 @@
             box-shadow: 0 4px 8px rgba(45, 95, 63, 0.3);
         }
         
+            @media (max-width: 480px) {
+                .employee-list {
+                    padding: 20px;
+                    width: 90%;}
+                .employee-name{
+                    color:#49cb52;
+                    font-weight: bold;
+                }
+                }

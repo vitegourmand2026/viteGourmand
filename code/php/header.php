@@ -85,7 +85,7 @@
     
     </header>
 
-<!-- OVERMAY -->
+<!-- OVERLAY -->
 
     <div class="overlay" id="overlay"></div>
     

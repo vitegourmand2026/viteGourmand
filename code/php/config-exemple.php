@@ -5,7 +5,7 @@
 /**
  * INSTRUCTIONS D'INSTALLATION
  
- * 1. Copier ce fichier et le renommer en config.php
+ * 1. Copier ce fichier et le renommer en config_local.php ou en config_production.php selon le besoin
  * 2. Modifier les valeurs avec vos identifiants et mot de passe
  
  * DÉVELOPPEMENT LOCAL :
@@ -17,7 +17,10 @@
  
  * PRODUCTION :
  
- * - Utiliser les identifiants fournis par l'hébergeur
+ * - $host = 'votre_hostname_mysql';              
+ * - $dbname = 'votre_nom_base_production';       
+ * - $username = 'votre_utilisateur_mysql';       
+ * - $password = 'votre_mot_de_passe';    
  
  */
 

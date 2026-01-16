@@ -113,7 +113,6 @@
 /* TITRES */
 
         .theme{
-            
             display: flex;
             justify-content: center;
         
@@ -275,11 +274,20 @@
 
       
 
-    @media (max-width: 900px) {
+    @media (max-width: 480px) {
+
+        .secondMenu {
+            flex-direction: column;
+            gap: 10px;
+            
+        }
 
         #cardsContainer{
             flex-direction: column;
             align-items: center;
+        }
+        .description{
+            text-align: center;
         }
 
         footer {
@@ -297,6 +305,7 @@
     
         .footer-message,
         .footer-info {
+            
             margin-left: 0;
             justify-content: center;
     }

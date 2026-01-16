@@ -14,7 +14,7 @@
     <?php
 }
 ?>
-?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -44,12 +44,12 @@
             
             <div>
                 <label for="email">Votre E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Entrez votre E-mail"required>
+                <input type="email" id="email" name="email" placeholder="E-mail"required>
             </div>
             
              <div class="password-container">
                 <label for="password">Votre mot de passe</label>
-                <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
                 <button type="button" class="toggle-password" onclick="togglePassword('password', 'toggleIcon1')">
                     <i class="fa-solid fa-eye" id="toggleIcon1"></i>
                 </button>

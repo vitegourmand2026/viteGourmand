@@ -377,7 +377,17 @@
             background-color: #1fc74c;
         }
 
-@media (max-width: 900px) {
+@media (max-width: 480px) {
+
+        .secondMenu {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .description{
+            text-align: center;
+        }
+
 
         #cardsContainer{
             flex-direction: column;

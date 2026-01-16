@@ -257,7 +257,7 @@
 
 /* RESPONSIVE */
 
-        @media (max-width: 900px) {
+        @media (max-width: 480px) {
             .container {
                 padding: 10px;
                 flex-direction: column;
@@ -273,4 +273,11 @@
                 display: flex;
                 justify-content: center;
             }
+            .payment img{
+                width: 75%;
+            }
+            .submit-btn {
+                width: 100%;
+                margin-left: 0rem;
+          }
         }

@@ -1,4 +1,4 @@
-// Feature: Gestion des menus avec filtres et catégories
+
 <?php
 
 include 'config.php';
@@ -66,7 +66,7 @@ $menus = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="filtres-section">
             <h3>Régime alimentaire</h3>
             <button class="filter-btn" data-filter="regime" data-value="Classique">Classique</button>
-            <button class="filter-btn" data-filter="regime" data-value="Vegan">Vegan</button>
+            <button class="filter-btn" data-filter="regime" data-value="Vegetarien">Vegetarien</button>
             <button class="filter-btn" data-filter="regime" data-value="Sans porc">Sans porc</button>
         </div>
         

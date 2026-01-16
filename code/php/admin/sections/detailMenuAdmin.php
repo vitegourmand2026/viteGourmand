@@ -111,7 +111,7 @@ $plates = $stmt_plates->fetchAll(PDO::FETCH_ASSOC);
         
         
         <h4>"<?php echo htmlspecialchars($menu['titre']); ?>"</h4>
-        <p><?php echo htmlspecialchars($menu['description']); ?></p>
+        <p class="description"><?php echo htmlspecialchars($menu['description']); ?></p>
 
 <!--PLATS-->
 

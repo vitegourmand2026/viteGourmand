@@ -229,7 +229,7 @@ if (!isset($_SESSION['commande_en_cours']['nb_personnes'])) {
         <input type="hidden" name="frais_livraison" value="<?php echo $_SESSION['commande_en_cours']['frais_livraison']; ?>">
         <input type="hidden" name="total" value="<?php echo $_SESSION['commande_en_cours']['total']; ?>">
 
-        <button type="submit" class="submit-btn">VALIDER LA COMMANDE</button>
+        <button type="submit" class="submit-btn">VALIDER</button>
     </form>
 </section>
 

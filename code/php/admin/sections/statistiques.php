@@ -90,17 +90,17 @@ if ($max_commandes == 0) {
                         <?php foreach ($statistiques as $stat): ?>
                             <tr>
                                 <th><?php echo htmlspecialchars($stat['menu_nom']); ?></th>
-                                <td><?php echo intval($stat['nb_commandes']); ?></td>
-                                <td><?php echo number_format(floatval($stat['chiffre_affaires']), 2, ',', ' ') . ' €'; ?></td>
+                                <td class="nbCommande"><?php echo intval($stat['nb_commandes']); ?></td>
+                                <td class="total"><?php echo number_format(floatval($stat['chiffre_affaires']), 2, ',', ' '); ?></td>
                             </tr>
                         <?php endforeach; ?>
                         
 <!-- TOTAL -->
 
-                        <tr style="background-color: #f0f0f0; font-weight: bold;">
+                        <tr class="total">
                             <th>TOTAL</th>
                             <td><?php echo $total_commandes; ?></td>
-                            <td><?php echo number_format($total_ca, 2, ',', ' '); ?> €</td>
+                            <td><?php echo number_format($total_ca, 2, ',', ' '); ?> </td>
                         </tr>
                 </tbody>
             </table>
@@ -111,11 +111,9 @@ if ($max_commandes == 0) {
         <div class="chart-section">
             <div class="chart-title">GRAPHIQUE DES COMMANDES</div>
             
-            <?php if (empty($statistiques)): ?>
-                <div style="text-align: center; padding: 40px; color: #999;">
-                    <p>Aucune donnée à afficher</p>
-                </div>
-            <?php else: ?>
+           
+                
+            <?php ?>
                 <div class="bar-chart">
                     <?php foreach ($statistiques as $stat): ?>
                         <?php 
@@ -134,7 +132,7 @@ if ($max_commandes == 0) {
                         </div>
                     <?php endforeach; ?>
                 </div>
-            <?php endif; ?>
+           
         </div>
     </div>
 

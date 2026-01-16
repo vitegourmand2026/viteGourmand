@@ -400,7 +400,7 @@
 
         /*RESPONSIVE*/
 
-        @media (max-width: 900px) {
+        @media (max-width: 480px) {
             .right-card {
                 width: 280px;
                 right: -280px;

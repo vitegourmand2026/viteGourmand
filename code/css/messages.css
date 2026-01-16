@@ -32,10 +32,11 @@
           text-transform: uppercase;
           margin-bottom: 20px;
           margin-top: 20px;
+          
         }
         .tableContainer{
           height: 800px;
-          max-width: 1200px;
+          max-width: 100%;
           border-radius: 12px;
           border: solid;
           border-color: #FDC8B6;
@@ -44,8 +45,8 @@
         }
 
         table {
-    width: 100%;
-    border-collapse: collapse;
+            width: 100%;
+            border-collapse: collapse;
         }
 
         th, td {
@@ -80,19 +81,15 @@
             transform: scale(1.05);
         }
 
-
-
         .btn-delete {
             background-color: #ea2b34;
             border: none;
             border-radius: 6px;
             padding: 10px;
             cursor: pointer;
-
             display: inline-flex;
             align-items: center;
             justify-content: center;
-
             transition: 0.3s ease;
         }
 
@@ -109,6 +106,23 @@
         @media (max-width: 480px){
             
             .tableContainer {
-                margin: 40px 20px;
+                margin: 20px 20px;
+            }
+            .caption{
+                text-align: center;
+            }
+            .tableContent{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .tableContentItem{
+                text-align: center;
+            }
+            .btn-delete {
+                display: flex;
+                margin-left: 150px;
+                
+               
             }
         }

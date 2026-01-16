@@ -169,5 +169,14 @@
         transform: translateX(-50%);
         z-index: 9999; 
     }
-        
+         @media (max-width: 480px) {
+          .submit-btn {
+          width: 100%;
+           margin-left: 0rem;
+          }
+          h2{
+            font-size: 16px;
+            text-align: center;
+
+          }}
   

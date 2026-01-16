@@ -89,6 +89,8 @@ $plates = $stmt_plates->fetchAll(PDO::FETCH_ASSOC);
     <body>  
     
         <?php include 'header.php';?>
+        
+<!-- MENU TOP -->
 
         <div class="secondMenu">
             <p>Régime : <?php echo htmlspecialchars($menu['regime']); ?></p>
@@ -122,7 +124,7 @@ $plates = $stmt_plates->fetchAll(PDO::FETCH_ASSOC);
         </div>
         
         <h4>"<?php echo htmlspecialchars($menu['titre']); ?>"</h4>
-        <p><?php echo htmlspecialchars($menu['description']); ?></p>
+        <p class="description"><?php echo htmlspecialchars($menu['description']); ?></p>
 
 <!-- PLATS -->
 
