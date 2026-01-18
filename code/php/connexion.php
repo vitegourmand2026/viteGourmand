@@ -29,8 +29,9 @@
 <body>
  
     
-    <div>
+    <div class="image-container">
         <img src="/ressources/ban.png" alt="image de plat du restaurant">
+       
     </div>
     
     <section class="form-container">
@@ -69,6 +70,6 @@
             </div>
         </form>
     </section>
-    <script src="/code/JS/password.js?v=<?php echo time(); ?>"></script>
+    <script src="/code/js/password.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>

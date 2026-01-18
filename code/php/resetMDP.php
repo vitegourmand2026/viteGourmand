@@ -169,6 +169,6 @@ if ($success) {
 <?php endif; ?>
 </form>
 </section>
-<script src="/code/JS/password.js?v=<?php echo time(); ?>"></script>
+<script src="/code/js/password.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>

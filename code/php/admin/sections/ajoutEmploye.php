@@ -197,7 +197,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </section>
      
-    <script src="/code/JS/password.js?v=<?php echo time(); ?>"></script>
+    <script src="/code/js/password.js?v=<?php echo time(); ?>"></script>
    
 </body>
 

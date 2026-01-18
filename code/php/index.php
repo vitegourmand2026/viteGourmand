@@ -60,7 +60,7 @@ if (isset($_SESSION['success'])) {
 
 
     
-    <div class="img-test"></div>
+    
     <div class="image-container">
         <img src="/ressources/ban.png" alt="image de plat du restaurant">
         <div class="text-main">Vite et Gourmand</div>

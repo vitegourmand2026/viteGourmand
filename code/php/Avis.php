@@ -15,9 +15,9 @@
    <?php include 'header.php';?>
 
 
-    <div>
+     <div class="image-container">
         <img src="/ressources/ban.png" alt="image de plat du restaurant">
-
+       
     </div>
 
 

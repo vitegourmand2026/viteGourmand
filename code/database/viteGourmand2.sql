@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : dim. 11 jan. 2026 à 22:26
+-- Généré le : dim. 18 jan. 2026 à 16:56
 -- Version du serveur : 8.0.40
 -- Version de PHP : 8.3.14
 
@@ -66,7 +66,8 @@ INSERT INTO `avis` (`id`, `user_id`, `commentaire`, `statut`) VALUES
 (9, 1, 'Le menu reception était excellent. Merci à vous!', 'validé'),
 (10, 1, 'Au top ! Mention spéciale pour le menu dinatoire à partager entre amis ;)', 'validé'),
 (11, 1, 'Trop bon, nous nous sommes régalés.', 'validé'),
-(13, 2, 'Nous avons pris le menu Marrakech, il était vraiment bon , Bravo!', 'validé');
+(13, 2, 'Nous avons pris le menu Marrakech, il était vraiment bon , Bravo!', 'validé'),
+(17, 2, 'SUPER RESTO !!!', 'en attente');
 
 -- --------------------------------------------------------
 
@@ -118,13 +119,14 @@ CREATE TABLE `commandes` (
 --
 
 INSERT INTO `commandes` (`id`, `user_id`, `menu_id`, `nb_personnes`, `date_livraison`, `heure_livraison`, `sous_total`, `frais_livraison`, `total`, `statut`, `date_commande`, `adresse_livraison`, `code_postal`, `ville`, `motif_annulation`) VALUES
-(34, 2, 2, 9, '2026-02-19', '18:45:00', 225, 5, 230, 'annulee', '2025-12-19 01:49:36', '23 rue Georges Raules 33000 Bordeaux', 0, '0', 'Fermeture exceptionnelle le 19/02. Cliente contactée par mail.'),
+(34, 2, 2, 9, '2026-02-19', '18:45:00', 225, 5, 230, 'preparation', '2025-12-19 01:49:36', '23 rue Georges Raules 33000 Bordeaux', 0, '0', 'wx<qx'),
 (35, 2, 3, 9, '2026-02-06', '11:12:00', 180, 5, 185, 'annulee', '2025-12-28 22:42:49', '23 rue Georges Raules 33000 Bordeaux', 0, '0', 'bqdljkbnld'),
-(36, 2, 5, 8, '2026-02-06', '14:26:00', 224, 5, 229, 'livree', '2025-12-28 23:21:31', '10 rue de la paix', 33000, 'Bordeaux', NULL),
+(36, 2, 5, 8, '2026-02-06', '14:26:00', 224, 5, 229, 'acceptee', '2025-12-28 23:21:31', '10 rue de la paix', 33000, 'Bordeaux', NULL),
 (37, 1, 8, 4, '2026-01-23', '12:00:00', 104, 5, 109, 'terminee', '2026-01-06 14:56:29', '6 rue Lucie Aubrac', 33000, 'Bordeaux', NULL),
 (38, 28, 9, 2, '2026-02-14', '14:00:00', 60, 5, 65, 'terminee', '2026-01-06 15:19:53', '4 rue moujeau', 33000, 'Bordeaux', NULL),
-(39, 2, 7, 3, '2026-02-27', '15:00:00', 75, 5, 80, 'en_attente', '2026-01-07 13:45:53', '10 rue de la paix', 33000, 'Bordeaux', NULL),
-(40, 36, 4, 5, '2026-03-18', '11:30:00', 125, 5, 130, 'terminee', '2026-01-09 23:29:23', '35, Rue de Bibonne', 33370, 'Tresses', NULL);
+(39, 2, 7, 3, '2026-02-27', '16:00:00', 75, 5, 80, 'en_attente', '2026-01-07 13:45:53', '10 rue de la paix', 33000, 'Bordeaux', NULL),
+(40, 36, 4, 5, '2026-03-18', '11:30:00', 125, 5, 130, 'terminee', '2026-01-09 23:29:23', '35, Rue de Bibonne', 33370, 'Tresses', NULL),
+(41, 2, 2, 5, '2026-01-31', '11:00:00', 125, 5, 130, 'en_attente', '2026-01-12 22:48:54', '10 rue de la paix', 33000, 'Bordeaux', NULL);
 
 -- --------------------------------------------------------
 
@@ -146,7 +148,8 @@ CREATE TABLE `contact_messages` (
 
 INSERT INTO `contact_messages` (`id`, `nom`, `prenom`, `email`, `message`) VALUES
 (3, 'Laurent', 'Martin', 'martinlaurent@gmail.com', 'Bonjour j\'ai un problème de connexion'),
-(5, 'bernard', 'paul', 'herty@hotmail.fr', 'bonjour peut on payer par carte bancaire ?');
+(5, 'bernard', 'paul', 'herty@hotmail.fr', 'bonjour peut on payer par carte bancaire ?'),
+(7, 'JO', 'RE', 'JORE@GMAIL.COM', ',BN,N,NN');
 
 -- --------------------------------------------------------
 
@@ -190,12 +193,12 @@ CREATE TABLE `menus` (
 INSERT INTO `menus` (`menu_id`, `theme`, `titre`, `personne`, `prix`, `regime`, `description`, `image`) VALUES
 (1, 'Gastronomie', 'Le Réception', 2, 36, 'Classique', 'Un menu parfait pour accompagner vos réceptions, vos événements.', 'images/menus/reception.png'),
 (2, 'Bistronomie', 'Le Bistro', 2, 25, 'Classique', 'Un menu simple à déguster entre amis ou en famille.', 'images/menus/bistro.png'),
-(3, 'Bistronomie', 'Le Dinatoire', 6, 20, 'Classique', 'Un apéritif dinatoire complet et varié pour toutes les envies.', 'images/menus/dînatoire.png'),
+(3, 'Bistronomie', 'Le Dinatoire', 6, 20, 'Classique', 'Un apéritif dinatoire complet et varié pour toutes les envies.', 'images/menus/dinatoire.png'),
 (4, 'Cuisine du monde', 'L\'Athènes', 2, 25, 'Classique', 'Voyagez aux confins de la cuisine grecque.', 'images/menus/athenes.png'),
 (5, 'Cuisine du monde', 'Le Marrakech', 4, 28, 'Sans porc', 'Un menu traditionnel à partager, qui respecte le régime hallal.', 'images/menus/marrakech.png'),
 (6, 'Cuisine du monde', 'Le Barcelone', 2, 25, 'Classique', 'Découvrez la cuisine des tapaserias catalanes.', 'images/menus/barcelona.png'),
 (7, 'Cuisine du monde', 'Le Roma', 2, 25, 'Végétarien', 'Tous les plats de ce menu mènent à Rome.', 'images/menus/roma.png'),
-(8, 'Végétarien', 'Le Champêtre', 2, 26, 'Végétarien', 'Un menu élaboré avec des plats inédits dans la cuisine végétarienne.', 'images/menus/champêtre.png'),
+(8, 'Végétarien', 'Le Champetre', 2, 26, 'Végétarien', 'Un menu élaboré avec des plats inédits dans la cuisine végétarienne.', 'images/menus/champêtre.png'),
 (9, 'Événements', 'Le St Valentin', 2, 30, 'Classique', 'Le menu des amoureux à partager sans modération.', 'images/menus/valentin.png');
 
 -- --------------------------------------------------------
@@ -266,7 +269,7 @@ INSERT INTO `plates` (`plate_id`, `name`, `categorie_id`, `menu_id`, `image`) VA
 (5, 'Sauté de veau et ses pommes de terre grenailles', 2, 2, 'images/plates/plat bistro.png'),
 (6, 'Soupe de fraise et son moelleux au citron', 3, 2, 'images/plates/dessert bistro.png'),
 (7, 'Toast avocat crevettes et ses tomates cerises ', 1, 3, 'images/plates/entree dinatoire.png'),
-(8, 'Plateau de charcuterie, fromages et légumes croquants.', 2, 3, 'images/plates/plat dînatoire.png'),
+(8, 'Plateau de charcuterie, fromages et légumes croquants.', 2, 3, 'images/plates/plat dinatoire.png'),
 (9, 'Assortiment de fruits exotiques et tropicaux.', 3, 3, 'images/plates/dessert dinatoire.png'),
 (10, 'Salade grecque et ses tomates anciennes, feta et olives noires                                        ', 1, 4, 'images/plates/entree athenes.png'),
 (11, 'Moussaka aubergines et boeuf, sauce béchamel ', 2, 4, 'images/plates/plat athenes.png'),
@@ -407,7 +410,7 @@ ALTER TABLE `allergenes`
 -- AUTO_INCREMENT pour la table `avis`
 --
 ALTER TABLE `avis`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT pour la table `categories`
@@ -419,13 +422,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT pour la table `commandes`
 --
 ALTER TABLE `commandes`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT pour la table `contact_messages`
 --
 ALTER TABLE `contact_messages`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT pour la table `horaires`
@@ -455,7 +458,7 @@ ALTER TABLE `plates`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- Contraintes pour les tables déchargées

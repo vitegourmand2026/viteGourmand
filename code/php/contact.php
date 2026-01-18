@@ -52,8 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <?php include 'header.php';?>
     
-    <div>
+    <div class="image-container">
         <img src="/ressources/ban.png" alt="image de plat du restaurant">
+       
     </div>
     
     <section class="form-container">

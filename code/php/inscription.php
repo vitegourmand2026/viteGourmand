@@ -101,8 +101,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <body>
    <?php include"header.php";?>
-    <div>
+    <div class="image-container">
         <img src="/ressources/ban.png" alt="image de plat du restaurant">
+       
     </div>
 
 <!-- MESSAGE ERREUR -->
@@ -119,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form class="contact-form" action="" method="POST">
 
             <div class="container">
-                <h1>S'INSCRIRE</h1>
+                <h2>S'INSCRIRE</h2>
             </div>
 
             <div>
@@ -169,7 +170,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  
             <div class="password-container">
                 <label for="password">Votre mot de passe </label>
-                <input type="password" id="password" name="password" placeholder="Entrez un mot de passe" required>
+                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
                 <button type="button" class="toggle-password" onclick="togglePassword('password', 'toggleIcon1')">
                     <i class="fa-solid fa-eye" id="toggleIcon1"></i>
                 </button>
@@ -179,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="password-container">
                 <label for="confirm-password">Confirmez votre mot de passe </label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmation" required>
                 <button type="button" class="toggle-password" onclick="togglePassword('confirm-password', 'toggleIcon2')">
                     <i class="fa-solid fa-eye" id="toggleIcon2"></i>
                 </button>
@@ -192,7 +193,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </section>
      
-       <script src="/code/JS/password.js?v=<?php echo time(); ?>"></script>
+       <script src="/code/js/password.js?v=<?php echo time(); ?>"></script>
    
 </body>
 
