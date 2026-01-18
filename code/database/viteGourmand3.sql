@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : dim. 18 jan. 2026 à 16:56
+-- Généré le : dim. 18 jan. 2026 à 17:31
 -- Version du serveur : 8.0.40
 -- Version de PHP : 8.3.14
 
@@ -198,7 +198,7 @@ INSERT INTO `menus` (`menu_id`, `theme`, `titre`, `personne`, `prix`, `regime`, 
 (5, 'Cuisine du monde', 'Le Marrakech', 4, 28, 'Sans porc', 'Un menu traditionnel à partager, qui respecte le régime hallal.', 'images/menus/marrakech.png'),
 (6, 'Cuisine du monde', 'Le Barcelone', 2, 25, 'Classique', 'Découvrez la cuisine des tapaserias catalanes.', 'images/menus/barcelona.png'),
 (7, 'Cuisine du monde', 'Le Roma', 2, 25, 'Végétarien', 'Tous les plats de ce menu mènent à Rome.', 'images/menus/roma.png'),
-(8, 'Végétarien', 'Le Champetre', 2, 26, 'Végétarien', 'Un menu élaboré avec des plats inédits dans la cuisine végétarienne.', 'images/menus/champêtre.png'),
+(8, 'Végétarien', 'Le Champetre', 2, 26, 'Végétarien', 'Un menu élaboré avec des plats inédits dans la cuisine végétarienne.', 'images/menus/champetre.png'),
 (9, 'Événements', 'Le St Valentin', 2, 30, 'Classique', 'Le menu des amoureux à partager sans modération.', 'images/menus/valentin.png');
 
 -- --------------------------------------------------------
