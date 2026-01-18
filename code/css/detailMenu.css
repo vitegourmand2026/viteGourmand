@@ -272,6 +272,12 @@
             background-color: #f64a4a;
         }
 
+        .auth-links{
+            color: #2d5f3f;
+            font-weight: bold;
+            text-align: center;
+        }
+
       
 
     @media (max-width: 480px) {

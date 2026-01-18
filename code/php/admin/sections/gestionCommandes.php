@@ -27,7 +27,7 @@ $query = " SELECT c.*,
     FROM commandes c
     INNER JOIN users u ON c.user_id = u.id
     INNER JOIN menus m ON c.menu_id = m.menu_id
-    ORDER BY c.nb_personnes DESC, c.total DESC, c.date_livraison DESC, c.heure_livraison DESC, c.adresse_livraison
+    ORDER BY c.id DESC
 ";
 $stmt = $pdo->prepare($query);
 $stmt->execute();

@@ -164,9 +164,9 @@ $plates = $stmt_plates->fetchAll(PDO::FETCH_ASSOC);
                 
                 <?php if (!isset($_SESSION['user_id'])): ?>
                     <div class="auth-links">
-                        <a href="/code/php/connexion.php" class="btn-auth">Se connecter</a>
+                        <a class="auth-links" href="/code/php/connexion.php" class="btn-auth">Se connecter</a>
                         <span class="separator">/</span>
-                        <a href="/code/php/inscription.php" class="btn-auth">S'inscrire</a>
+                        <a class="auth-links" href="/code/php/inscription.php" class="btn-auth">S'inscrire</a>
                     </div>
                 <?php endif; ?>
             </div>

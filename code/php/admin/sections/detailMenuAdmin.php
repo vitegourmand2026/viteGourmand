@@ -138,7 +138,7 @@ $plates = $stmt_plates->fetchAll(PDO::FETCH_ASSOC);
         <div class="edit-form-content">
             <h2>Modifier le menu</h2>
             
-            <form method="POST" action="/code/process/update_Menu.php">
+            <form method="POST" action="/code/process/update_menu.php">
                 <input type="hidden" name="menu_id" value="<?php echo $menu_id; ?>">
                 
                 <div class="form-group">

@@ -16,7 +16,7 @@
     <div class="container">
         <H1>CONDITIONS GENERALES DE VENTE DU SITE VITE ET GOURMAND.FR</H1>
         <p>
-            La société VITEGOURMAND exploite un site Internet accessible à l'adresse suivante ……….permettant à VITEGOURMAND de
+            La société VITEGOURMAND exploite un site Internet accessible à l'adresse suivante vitegourmand.re.gd permettant à VITEGOURMAND de
             vendre aux consommateurs qui souhaiteront les acheter des produits alimentaires.
             Les présentes conditions générales de vente régissent l'ensemble des relations entre la société VITEGOURMAND, qui
             exploite la marque VITE ET GOURMAND
@@ -117,9 +117,7 @@
         acheter en cliquant sur le bouton "Ajouter au panier".La Commande fait l'objet d'un récapitulatif qui
         reprend les éléments spécifiques aux Produits objets de la Commande. Avant de valider une Commande, il
         incombe au Consommateur de vérifier qu'elle correspond à ses souhaits en termes de quantités de produits. Le
-        Consommateur peut alors confirmer sa Commande en cliquant sur le bouton « VALIDER ».Le mode de
-        livraison à domicile ne permet pas, pour des raisons de coût, de livrer des commandes pour un montant
-        inférieur à 30 euros TTC (hors frais de livraison ).Les prix,
+        Consommateur peut alors confirmer sa Commande en cliquant sur le bouton « VALIDER ».Les prix,
         volumes et quantités offerts à la vente et facturés sont ceux qui s'affichent au moment où le Consommateur
         valide la Commande et non au moment où le client la reçoit.Le prix des produits est indiqué en euros toutes
         taxes comprises.</p>
@@ -194,7 +192,7 @@
         VITEGOURMAND s'est entouré des meilleurs partenaires pour proposer aux Consommateurs des services de qualité.
         Dysfonctionnements techniques et erreurs de paiement
         VITEGOURMAND met tout en œuvre pour assurer le bon fonctionnement et la sécurité du site
-        www.kitchen-daily.fr. Toutefois, la société ne saurait être tenue responsable des conséquences résultant
+        vitegourmand.rf.gd. Toutefois, la société ne saurait être tenue responsable des conséquences résultant
         d’un dysfonctionnement technique, d’un bug ou d’une faille exploitée de manière abusive par un utilisateur
         dans le but de contourner les conditions normales d’utilisation du site. En cas d’erreur manifeste de prix,
         de calcul ou d’affichage résultant d’un dysfonctionnement technique du site, VITEGOURMAND se réserve le
@@ -273,13 +271,13 @@
         objectif, licite ou illicite diffusé sur lesdits sites Internet. Le Consommateur reconnaît qu'il doit faire
         preuve de discernement et supporter tous les risques afférents à l'utilisation qu'il fait du contenu et,
         notamment, lorsqu'il se fie à l'opportunité, l'utilité ou le caractère complet de ce contenu, qu'il soit
-        créé par VITEGOURMAND ou par des tiers accessible à partir du Site KITCHENDAILY, par des liens et notamment par
+        créé par VITEGOURMAND ou par des tiers accessible à partir du Site vitegourmand.rf.gd par des liens et notamment par
         ses services de recherche.</p>
 
     
         <h3>15. Modification et interruption du service</h3>
         <p>
-     VITEGOURMAND se réserve le droit, à tout moment, de modifier ou d’interrompre de manière temporaire tout ou partie
+        VITEGOURMAND se réserve le droit, à tout moment, de modifier ou d’interrompre de manière temporaire tout ou partie
         du Service proposé pour des raisons techniques ou dans le cas où un Consommateur ne se serait pas acquitté
         du paiement de sa Commande, et ce sans avoir à en informer préalablement le Consommateur.
         Le Consommateur ne peut engager la responsabilité de VITEGOURMAND à raison des modifications et interruptions
