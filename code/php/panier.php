@@ -32,7 +32,7 @@ $menu = $stmt->fetch(PDO::FETCH_ASSOC);
 // SELECT USER
 
 $user_id = $_SESSION['user_id'];
-$query = "SELECT nom, prenom, email, telephone, adresse, code_postal, ville FROM users WHERE id = :user_id";
+$query = "SELECT nom, prenom, email, telephone FROM users WHERE id = :user_id";
 $stmt = $pdo->prepare($query);
 $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
 $stmt->execute();
@@ -175,19 +175,7 @@ if (!isset($_SESSION['commande_en_cours']['nb_personnes'])) {
     
     <section class="form-container">
 
-    <!-- Affichage des messages d'erreur A REFAIRE-->
-    <?php if (isset($_SESSION['error'])): ?>
-        <div style="background:#f8d7da; color:#721c24; padding:15px; margin:20px; border-radius:5px; border:1px solid #f5c6cb;">
-            <strong>❌ Erreur :</strong> <?php echo htmlspecialchars($_SESSION['error']); unset($_SESSION['error']); ?>
-        </div>
-    <?php endif; ?>
     
-    <!-- Affichage des messages de succès A REFAIRE -->
-    <?php if (isset($_SESSION['success'])): ?>
-        <div style="background:#d4edda; color:#155724; padding:15px; margin:20px; border-radius:5px; border:1px solid #c3e6cb;">
-            <strong>✓ Succès :</strong> <?php echo htmlspecialchars($_SESSION['success']); unset($_SESSION['success']); ?>
-        </div>
-    <?php endif; ?>
 
 <!-- FORMAULAIRE LIVRAISON -->
     

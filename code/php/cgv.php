@@ -16,7 +16,7 @@
     <div class="container">
         <H1>CONDITIONS GENERALES DE VENTE DU SITE VITE ET GOURMAND.FR</H1>
         <p>
-            La société VITEGOURMAND exploite un site Internet accessible à l'adresse suivante vitegourmand.re.gd permettant à VITEGOURMAND de
+            La société VITEGOURMAND exploite un site Internet accessible à l'adresse suivante vitegourmand.rf.gd permettant à VITEGOURMAND de
             vendre aux consommateurs qui souhaiteront les acheter des produits alimentaires.
             Les présentes conditions générales de vente régissent l'ensemble des relations entre la société VITEGOURMAND, qui
             exploite la marque VITE ET GOURMAND

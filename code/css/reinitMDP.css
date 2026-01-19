@@ -85,5 +85,12 @@
           transform: translateY(-2px);
           box-shadow: 0 4px 8px rgba(45, 95, 63, 0.3);}
 
+            @media (max-width: 480px) {
+
+          .submit-btn {
+          width: 100%;
+           margin-left: 0rem;
+          }}
+
 
 

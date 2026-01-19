@@ -2,23 +2,21 @@
 session_start();
 require_once '../php/config.php';
 
-// VVERIF POST
-
+// VERIF POST
 if (!isset($_SESSION['user_id']) || $_SERVER['REQUEST_METHOD'] !== 'POST') {
     header('Location: /code/php/menus.php');
     exit;
 }
 
-
 $user_id = $_SESSION['user_id'];
 
-// RECUP INFOS PANIER
+// RECUP INFOS PANIER DEPUIS LE POST 
 
 $menu_id = isset($_POST['menu_id']) ? (int)$_POST['menu_id'] : 0;
-$nb_personnes = isset($_SESSION['commande_en_cours']['nb_personnes']) ? (int)$_SESSION['commande_en_cours']['nb_personnes'] : 0;
-$sous_total = isset($_SESSION['commande_en_cours']['prix_total']) ? (float)$_SESSION['commande_en_cours']['prix_total'] : 0;
-$frais_livraison = isset($_SESSION['commande_en_cours']['frais_livraison']) ? (float)$_SESSION['commande_en_cours']['frais_livraison'] : 5.00;
-$total = isset($_SESSION['commande_en_cours']['total']) ? (float)$_SESSION['commande_en_cours']['total'] : 0;
+$nb_personnes = isset($_POST['nb_personnes']) ? (int)$_POST['nb_personnes'] : 0;
+$sous_total = isset($_POST['sous_total']) ? (float)$_POST['sous_total'] : 0;
+$frais_livraison = isset($_POST['frais_livraison']) ? (float)$_POST['frais_livraison'] : 5.00;
+$total = isset($_POST['total']) ? (float)$_POST['total'] : 0;
 
 // RECUP INFOS LIVRAISON
 
@@ -28,20 +26,16 @@ $ville = trim($_POST['ville'] ?? '');
 $date_livraison = $_POST['date'] ?? '';
 $heure_livraison = $_POST['heure'] ?? '';
 
-
-
 // VERIF INFOS
 
-if (!$menu_id || $sous_total <= 0 || $nb_personnes <= 0 || empty($adresse_livraison) || empty($date_livraison) || empty($heure_livraison)|| empty($code_postal)|| empty($ville)) {
+if (!$menu_id || $sous_total <= 0 || $nb_personnes <= 0 || empty($adresse_livraison) || empty($date_livraison) || empty($heure_livraison) || empty($code_postal) || empty($ville)) {
     $_SESSION['error'] = "Tous les champs obligatoires doivent être remplis et valides.";
-    
-    
     header('Location: /code/php/panier.php');
     exit;
 }
 
 try {
-    
+
 // INSERT COMMANDE
 
     $query = "INSERT INTO commandes 
@@ -62,8 +56,8 @@ try {
     $stmt->bindParam(':date_livraison', $date_livraison);
     $stmt->bindParam(':heure_livraison', $heure_livraison);
     
-   
     if ($stmt->execute()) {
+        // Nettoyer la session
         unset($_SESSION['commande_en_cours']); 
         $_SESSION['success'] = "Votre commande a été enregistrée avec succès !";
         header('Location: /code/php/index.php');
@@ -71,7 +65,6 @@ try {
     } else {
         throw new Exception("Échec de l'exécution de la requête");
     }
-    
 } catch (PDOException $e) {
     $_SESSION['error'] = "Une erreur est survenue : " . $e->getMessage();
     header('Location: /code/php/panier.php');

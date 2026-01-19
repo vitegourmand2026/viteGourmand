@@ -129,12 +129,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include "../admin_header.php"; ?>
     
    
+  <div class="btn-container">
+        <button class="main-btn">Ajouter un employé</button>
+    </div>
 
     <section class="form-container">
         <form class="contact-form" method="POST" action="">
-            <div class="container">
-                <h1>AJOUTER UN EMPLOYÉ</h1>
-            </div>
+          
 
             <div>
                 <div>
@@ -163,7 +164,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div>
                 <label for="adresse">Adresse</label>
-                <input type="text" id="adresse" name="adresse" placeholder="Son adresse complète"
+                <input type="text" id="adresse" name="adresse" placeholder="Adresse complète"
                        value="<?php echo isset($_POST['adresse']) ? htmlspecialchars($_POST['adresse']) : ''; ?>" required>
             </div>
 
@@ -171,7 +172,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
              
             <div class="password-container">
                 <label for="password">Son mot de passe *</label>
-                <input type="password" id="password" name="password" placeholder="Entrez un mot de passe" required>
+                <input type="password" id="password" name="password" placeholder="Mot de passe" required>
                 <button type="button" class="toggle-password" onclick="togglePassword('password', 'toggleIcon1')">
                     <i class="fa-solid fa-eye" id="toggleIcon1"></i>
                 </button>
@@ -185,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             
             <div class="password-container">
                 <label for="confirm-password">Confirmez son mot de passe *</label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez son mot de passe" required>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez" required>
                 <button type="button" class="toggle-password" onclick="togglePassword('confirm-password', 'toggleIcon2')">
                     <i class="fa-solid fa-eye" id="toggleIcon2"></i>
                 </button>

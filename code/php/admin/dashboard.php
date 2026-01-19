@@ -3,7 +3,7 @@
 session_start();
 require_once '../../process/check_auth.php';  
 
-// VERIF ROLE ADMIN
+// VERIF ROLE ADMINISTRATEUR
 
 if ($_SESSION['role'] !== 'admin') {
     header('Location: ../connexion.php');  
