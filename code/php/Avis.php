@@ -20,15 +20,12 @@
        
     </div>
 
-
     <section class="form-container">
 
-    <!-- POST VERS PROCESS-->
+    <!-- POST PROCESS-->
 
     <form class="contact-form" method="POST" action="../process/traitement_avis.php">
 
-
-       
 
             <div class="container">
                 <h2>LAISSER UN AVIS</h2>

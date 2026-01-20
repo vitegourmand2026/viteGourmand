@@ -1,6 +1,8 @@
  function togglePassword(inputId, iconId) {
             const passwordInput = document.getElementById(inputId);
             const toggleIcon = document.getElementById(iconId);
+
+// AFFICHE MDP
             
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';

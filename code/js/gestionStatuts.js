@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentCommandeId = null;
     let selectedStatus = null;
 
-    // Ouvrir le menu des statuts
+// OPEN MENU STATUS
+
     statusBadges.forEach(badge => {
         badge.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -24,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Fermer les menus en cliquant sur l'overlay
+// OVERLAY CLOSE
+
     overlay.addEventListener('click', function() {
         rightCard.classList.remove('open');
         overlay.classList.remove('visible');
@@ -33,24 +35,27 @@ document.addEventListener('DOMContentLoaded', function() {
         selectedStatus = null;
     });
 
-    // Gérer le clic sur les statuts
+// GESTON CLIC
+
     statusItems.forEach(item => {
         item.addEventListener('click', function(e) {
             e.preventDefault();
             const newStatus = this.getAttribute('data-status');
             
-            // Si le statut est "annulée", ouvrir la zone motif
+// CLIC ANNULÉE
+
             if (newStatus === 'annulee') {
                 selectedStatus = 'annulee';
                 motifContainer.classList.add('show');
             } else {
-                // Pour les autres statuts, rediriger directement
+                
                 window.location.href = '/code/process/admin_update_statut.php?id=' + currentCommandeId + '&statut=' + newStatus;
             }
         });
     });
 
-    // Gérer le clic sur le bouton Envoyer
+// ENVOYER
+
     btnEnvoyer.addEventListener('click', function() {
         const motif = motifTextarea.value.trim();
         
@@ -64,7 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Rediriger avec le motif
+// MOTIF ANNULATION
+
         const motifEncoded = encodeURIComponent(motif);
         window.location.href = '/code/process/admin_update_statut.php?id=' + currentCommandeId + '&statut=annulee&motif_annulation=' + motifEncoded;
     });

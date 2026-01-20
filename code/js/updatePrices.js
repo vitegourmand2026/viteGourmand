@@ -1,6 +1,3 @@
-
-
-
     const input = document.getElementById('nb_personnes');
     const sousTotalEl = document.getElementById('sous_total');
     const totalEl = document.getElementById('total');

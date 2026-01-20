@@ -9,7 +9,8 @@
             });
         });
 
-        // Overlays
+// OVERLAY
+
         document.querySelectorAll('.overlay').forEach(overlay => {
             overlay.addEventListener('click', function() {
                 const commandeId = this.id.replace('overlay-', '');

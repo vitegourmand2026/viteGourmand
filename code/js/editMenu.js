@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const overlay = document.getElementById('overlay');
     const contentView = document.getElementById('contentView');
     
-    // Afficher le formulaire de modification
+    // FORMULAIRE MODFICATION
+
     if (btnModifier) {
         btnModifier.addEventListener('click', function() {
             contentView.style.display = 'none';
@@ -15,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Annuler la modification
+    // ANNULER MODIF
+
     if (cancelEdit) {
         cancelEdit.addEventListener('click', function() {
             contentView.style.display = 'block';
@@ -25,7 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Fermer au clic sur l'overlay
+    // OVERLAY
+    
     if (overlay) {
         overlay.addEventListener('click', function() {
             if (editForm.classList.contains('visible')) {

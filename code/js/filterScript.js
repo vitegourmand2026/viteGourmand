@@ -1,30 +1,33 @@
-// Récupérer les éléments
+
 const filtresBtn = document.getElementById('filterButton');
 const filtresMenu = document.getElementById('filtres-menu');
 const validerBtn = document.getElementById('valider-btn');
 const allCards = document.querySelectorAll('.card');
 const overlayFiltres = document.getElementById('overlay');
 
-// Ouvrir le menu des filtres
+// OPEN MENU
+
 filtresBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     overlayFiltres.classList.add('visible');
     filtresMenu.classList.add('open');
 });
 
-// Fermer le menu des filtres quand on clique sur l'overlay
+// OVERLAY CLOSE
 overlayFiltres.addEventListener('click', () => {
     if (filtresMenu.classList.contains('open')) {
         filtresMenu.classList.remove('open');
     }
 });
 
-// Sélection des filtres
+// SELECTION FILTRES
+
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => btn.classList.toggle('open'));
 });
 
-// Appliquer les filtres au clic sur Valider
+// APPLICATION APRES VALIDATION
+
 validerBtn.addEventListener('click', () => {
     const selected = {
         theme: [],
@@ -33,14 +36,16 @@ validerBtn.addEventListener('click', () => {
         prix: []
     };
 
-    // Récupérer tous les filtres sélectionnés
+// RECUP FILTRES
+
     document.querySelectorAll('.filter-btn.open').forEach(btn => {
         const type = btn.getAttribute('data-filter');
         const value = btn.getAttribute('data-value');
         selected[type].push(value);
     });
 
-    // Filtrer les cartes
+// FILTRER CARDS
+
     allCards.forEach(card => {
         const theme = card.getAttribute('data-theme');
         const prix = parseInt(card.getAttribute('data-prix'));
@@ -49,7 +54,8 @@ validerBtn.addEventListener('click', () => {
         
         let show = true;
 
-        // Vérifier chaque type de filtre
+// Vérifier chaque type de filtre
+
         if (selected.theme.length > 0 && !selected.theme.includes(theme)) {
             show = false;
         }
@@ -79,7 +85,8 @@ validerBtn.addEventListener('click', () => {
         card.style.display = show ? 'block' : 'none';
     });
 
-    // Fermer le menu
+    // CLOSE
+    
     overlayFiltres.classList.remove('visible');
     filtresMenu.classList.remove('open');
 });
